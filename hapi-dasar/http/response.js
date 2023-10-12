@@ -9,13 +9,14 @@ const init = async () => {
 
   server.route([
     {
-      method: 'get',
-      path: '/about',
-      handler(request, h) {
-        return {
-          page: 'ini adalah halaman about',
-        };
-      },
+      method: 'GET',
+      path: '/login',
+      handler: (request, h) => h
+        .response({
+          hello: 'world',
+        })
+        .code(200) // https://hapi.dev/api/?v=21.3.2#response-toolkit
+      ,
     },
   ]); // route ini sebaiknya di pisah (buat file baru agar lebih rapih)
 
