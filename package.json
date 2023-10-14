@@ -5,14 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint ./ --fix"
-
+    "lint": "eslint ./ --fix",
+    "server": "node ./studi-kasus/src/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@hapi/hapi": "^21.3.2"
+    "@hapi/hapi": "^21.3.2",
+    "nanoid": "^3.1.30"
   },
   "devDependencies": {
     "eslint": "^8.51.0",
