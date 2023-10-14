@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint ./ --fix",
-    "server": "node ./studi-kasus/src/server.js"
+    "server": "node ./studi-kasus/src/server.js",
+    "server-production": "NODE_ENV=production node ./studi-kasus/src/server.js"
   },
   "keywords": [],
   "author": "",
